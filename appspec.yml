@@ -6,5 +6,5 @@ Resources:
         TaskDefinition: "arn:aws:ecs:us-west-2:156962844638:task-definition/890054-Eureka-Server:1"
         LoadBalancerInfo:
           ContainerName: "Eureka-Server"
-          ContainerPort: "8761"
+          ContainerPort: "80"
         PlatformVersion: "LATEST"
