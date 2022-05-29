@@ -1,0 +1,10 @@
+version: 1.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:us-west-2:156962844638:task-definition/890054-Eureka-Server:1"
+        LoadBalancerInfo:
+          ContainerName: "Eureka-Server"
+          ContainerPort: "8761"
+        PlatformVersion: "LATEST"
